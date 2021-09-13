@@ -1,0 +1,31 @@
+// Mobile: responsive
+@media screen and (max-width: 1000px) {
+    .hover-nav-wrap {
+        .hover-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            top: 40%;
+            background-color: $color_white;
+            box-shadow: 4px 7px $hover_nav;
+            .hoverCategory {
+                margin: 1rem 5rem;
+                .listCollection {
+                    margin-top: 1rem;
+                    .list {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile: responsive
+@media screen and (max-width: 500px) {
+    .hover-nav-wrap {
+        .hover-nav {
+            top: 51%;
+        }
+    }
+}

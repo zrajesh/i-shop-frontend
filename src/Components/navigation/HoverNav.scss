@@ -1,0 +1,33 @@
+@import "../../scss/Variables";
+
+.hover-nav-wrap {
+    .hover-nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        gap: 10rem;
+        box-shadow: -4px -.5px $hover_nav, 5px 10px $hover_nav;
+        border-radius: 1.5rem;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        .hoverCategory {
+            font-size: 2.4rem;
+            margin: 5rem 5rem;
+            .listCollection {
+                margin-top: 2rem;
+                .list {
+                    font-size: 1.8rem;
+                    margin-top: 1rem;
+                    cursor: pointer;
+                    text-decoration: none;
+                    display: block;
+                    color: $color_black;
+                }
+            }
+        }
+    }
+}
+
+// Mobile: responsive
+@import "./HoverNavMob";

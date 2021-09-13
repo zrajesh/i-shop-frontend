@@ -1,0 +1,37 @@
+// Responsive: mobile
+@media screen and (max-width: 1000px) {
+    .bottom-nav {
+        align-items: stretch;
+        .top-wrap {
+            justify-content: space-between;
+            margin: 0 5%;
+            .menu-icon {
+                .menu-btn {
+                    display: block;
+                }
+            }
+        }
+        .nav-items {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: -100%;
+            top: 17rem;
+            .nav-item-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .nav-item {
+                    margin: 2rem auto;
+                    color: $color_white;               
+                }
+            }
+        }
+        #check:checked ~ .nav-items {
+            left: 0;
+            transition: left .5s ease-in-out;
+            background-color: $nav_background;
+            width: 100vw;
+        }
+    }
+}
