@@ -16,6 +16,10 @@ const BottomNav = () => {
     const handleToggle = () => {
         setToggleDisplay(!toggleDisplay);
     }
+    // Turns off hover nav when menu button is clicked
+    const offToggle = () => {
+        if (toggleDisplay === true) setToggleDisplay(false);
+    }
     return (
         <nav>
         <div className="bottom-nav">
@@ -23,7 +27,10 @@ const BottomNav = () => {
                 <div className="brand">
                     <h1>{brand.name}</h1>
                 </div>
-                <div className="menu-icon">
+                <div
+                 className="menu-icon"
+                 onClick={offToggle}
+                 >
                     <label htmlFor="check">
                         <i className="menu-btn fas fa-bars"></i>
                     </label>
@@ -35,11 +42,14 @@ const BottomNav = () => {
             <SearchBox />
             {
                 NavItems.map((item, index) => (
-                    <div key={index} className={"nav-item-div " + (item.name === "STORE" ? "hoverStore" : "")}>
+                    <div
+                     key={index} 
+                     className={"nav-item-div " + (item.name === "STORE" ? "hoverStore" : null)}
+                     >
                         <Link 
-                         className="nav-item"
                          to={item.to}
                          onClick={item.name === "STORE" ? handleToggle : null}
+                         className="nav-item"
                         >
                         {item.name}
                         {
