@@ -17,14 +17,10 @@
             position: fixed;
             left: -100%;
             top: 17rem;
-            .nav-item-div {
-                display: flex;
-                flex-direction: column;
+            .nav-item {
                 align-items: center;
-                .nav-item {
-                    margin: 2rem auto;
-                    color: $color_white;               
-                }
+                margin: 2rem auto;
+                color: $color_white;               
             }
         }
         #check:checked ~ .nav-items {

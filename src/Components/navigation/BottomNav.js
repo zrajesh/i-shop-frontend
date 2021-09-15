@@ -36,33 +36,28 @@ const BottomNav = () => {
                     </label>
                 </div>
             </div>
-
             <input type="checkbox" id="check" />
             <div className="nav-items">
             <SearchBox />
             {
                 NavItems.map((item, index) => (
-                    <div
-                     key={index} 
-                     className={"nav-item-div " + (item.name === "STORE" ? "hoverStore" : null)}
-                     >
-                        <Link 
-                         to={item.to}
-                         onClick={item.name === "STORE" ? handleToggle : null}
-                         className="nav-item"
-                        >
-                        {item.name}
-                        {
-                        item.name === "STORE" ? 
-                        <span className="listNavIcon"> &#9660;</span> 
-                        : ""
-                        }
-                        </Link>
-                    </div>
+                    <Link 
+                     key={index}
+                     to={item.to}
+                     onClick={item.name === "STORE" ? handleToggle : null}
+                     className="nav-item"
+                    >
+                    {item.name}
+                    {
+                    item.name === "STORE" ? 
+                    <span className="listNavIcon"> &#9660;</span> 
+                    : null
+                    }
+                    </Link>
                 ))
             }
-            <HoverNav toggleDisplay={toggleDisplay} />
             </div>
+            <HoverNav toggleDisplay={toggleDisplay} />
         </div>
         </nav>
     );
