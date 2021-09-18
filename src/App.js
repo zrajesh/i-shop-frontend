@@ -1,7 +1,10 @@
+// Imports
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 // Import components
-import { BrowserRouter, Switch } from "react-router-dom";
 import BottomNav from "./Components/navigation/BottomNav";
 import TopNav from "./Components/navigation/TopNav";
+// Import pages
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
@@ -10,6 +13,7 @@ function App() {
         <TopNav />
         <BottomNav/>
         <Switch>
+            <Route exact path="/" component={HomePage} />
         </Switch>
       </BrowserRouter>
     </div>
