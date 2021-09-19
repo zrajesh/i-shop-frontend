@@ -2,12 +2,13 @@ import React from 'react';
 // Import components
 import BannerImage from './BannerImage';
 // Import list
-import { headerTopImage } from '../../pages/BannerList';
+import { headerTopImage } from './BannerList';
 // Import scss
 import "./Banner.scss";
 
 const Banner = () => {
-    const imageUrl = headerTopImage.imageUrl;
+    const {imageUrl} = headerTopImage;
+    
     return (
         <div className="banner">
             <BannerImage
