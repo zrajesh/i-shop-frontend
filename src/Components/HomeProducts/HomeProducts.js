@@ -7,6 +7,8 @@ import { getAllProducts } from '../../redux/actions/productAction';
 // Import components
 import HomeProdNav from './HomeProdNav';
 import Card from '../Card/Card';
+// Import loading
+import { Loading } from '../Loading';
 // Import css
 import "./HomeProducts.scss";
 
@@ -15,7 +17,7 @@ const HomeProducts = () => {
 
     const dispatch = useDispatch();
 
-    const fetchProducts = async () => {
+    const fetchProducts =   async () => {
         const response = await axios
             .get("https://fakestoreapi.com/products")
             .catch(err => console.log("ERROR: ", err))
@@ -24,11 +26,21 @@ const HomeProducts = () => {
 
     useEffect(() => {
         fetchProducts();
-    })
+        // Disabling the dependency pass
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     return (
         <div className="home-products">
             <HomeProdNav />
             <div className="home-card-wrap">
+            {
+                products.length === 0 ?
+                <div><h1 style={{textAlign: 'center'}}>
+                {Loading.message}
+                </h1></div>
+                : null
+            }
             {
                 products.filter(product => product.id <= 10).map(product => (
                     <Card key={product.id} product={product} />
