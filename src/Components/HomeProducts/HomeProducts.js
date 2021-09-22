@@ -24,7 +24,7 @@ const HomeProducts = () => {
 
     useEffect(() => {
         fetchProducts();
-    }, [])
+    })
     return (
         <div className="home-products">
             <HomeProdNav />
