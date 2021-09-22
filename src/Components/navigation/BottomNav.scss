@@ -34,6 +34,9 @@
             color: $color_black;
             margin: 0 2rem;
         }
+        .nav-item:focus {
+            color: $nav_item_clicked;
+        }
     }
 }
 
