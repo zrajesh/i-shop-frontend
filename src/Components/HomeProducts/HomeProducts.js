@@ -7,15 +7,18 @@ import { getAllProducts } from '../../redux/actions/productAction';
 // Import components
 import HomeProdNav from './HomeProdNav';
 import Card from '../Card/Card';
-// Import loading
+import ButtonUnderline from '../buttonUnderline/ButtonUnderline';
+// Import list
 import { Loading } from '../Loading';
+import { HomeProductSection } from '../buttonUnderline/CallerList';
 // Import css
 import "./HomeProducts.scss";
 
 const HomeProducts = () => {
     const products = useSelector(state => state.products.products);
-
     const dispatch = useDispatch();
+    const displayHotBox = true;
+    const buttonCall = HomeProductSection;
 
     const fetchProducts =   async () => {
         const response = await axios
@@ -42,11 +45,12 @@ const HomeProducts = () => {
                 : null
             }
             {
-                products.filter(product => product.id <= 10).map(product => (
-                    <Card key={product.id} product={product} />
+                products.filter(product => product.id <= 5).map(product => (
+                    <Card key={product.id} displayHotBox={displayHotBox} product={product} />
                 ))
             }
             </div>
+            <ButtonUnderline buttonCall={buttonCall} />
         </div>
     );
 };

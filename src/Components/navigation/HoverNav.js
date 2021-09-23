@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // Import list
 import { HoverCategoryList } from './HoverNavList';
-// Import scss
-import "./HoverNav.scss";
 
 const HoverNav = ({toggleDisplay}) => {
     return (
-        <div className="hover-nav-wrap" style={{display: toggleDisplay === true ? "block" : "none"}}>
+        <div
+         className="hover-nav-wrap" 
+         style={{display: toggleDisplay === true ? "block" : "none"}}
+        >
         <div className="hover-nav">
             {
                 HoverCategoryList.map((item, index) => (

@@ -6,6 +6,8 @@
     border: 1px solid $border_card;
     cursor: pointer;
     border-radius: 0.5rem;
+    position: relative;
+    @import "../hotLabel/HotLabel";
     &:hover {
         box-shadow: -0.2rem 0 0.5rem $card_hover, 0.2rem 0.2rem 0.5rem $card_hover;
     }
@@ -18,23 +20,31 @@
         flex-direction: column;
         align-items: center;
         margin-top: 1rem;
+        position: relative;
         .card-head {
             font-size: 2rem;
             font-weight: bold;
             text-align: center;
         }
         .rating {
-            color: yellow;
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: bold;
             margin-top: 2rem;
+            position: absolute;
+            bottom: 5rem;
+            .star {
+                color: $rating_color;
+                margin-left: 1rem;
+            }
         }
         .price {
-            color: orangered;
+            color: $orange_red;
             font-size: 1.8rem;
+            position: absolute;
+            bottom: 2.2rem;
             .price-line {
                 text-decoration: line-through;
-                color: gray;
+                color: $line_through;
                 margin: 0 0.5rem;
             }
         }
