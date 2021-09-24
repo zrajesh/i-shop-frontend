@@ -14,9 +14,9 @@
         .nav-items {
             display: flex;
             flex-direction: column;
-            position: fixed;
+            position: absolute;
             left: -120%;
-            top: 17rem;
+            top: 100%;
             .nav-item {
                 align-items: center;
                 margin: 2rem auto;
@@ -28,6 +28,9 @@
             transition: left .5s ease-in-out;
             background-color: $nav_background;
             width: 100vw;
+        }
+        .closeNav {
+            display: none;
         }
     }
 }

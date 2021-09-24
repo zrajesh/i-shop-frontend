@@ -1,10 +1,9 @@
 export const title = {name: "BEST SELLER"}
 
 export const prodNavItems = [
-    {item: "All"},
-    {item: "Men"},
-    {item: "Women"},
-    {item: "Gadgets"},
-    {item: "Accessories"}
+    {item: "Men", path: "/mens"},
+    {item: "Women", path: "/womens"},
+    {item: "Gadgets", path: "/gadgets"},
+    {item: "Jewelery", path: "/jeweleries"}
 ]
 

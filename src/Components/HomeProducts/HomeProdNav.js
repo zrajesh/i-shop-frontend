@@ -13,7 +13,7 @@ const HomeProdNav = () => {
                         <Link
                          key={index} 
                          className="prod-item" 
-                         to="#">
+                         to={item.path}>
                         {item.item}
                         </Link>
                     ))
