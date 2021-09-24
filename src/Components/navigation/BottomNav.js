@@ -19,13 +19,11 @@ const BottomNav = () => {
     // Turns off hover nav when menu button is clicked
     const offToggle = (event) => {
         if (toggleDisplay === true) setToggleDisplay(false);
-        event.target.parentElement.parentElement.parentElement.parentElement.childNodes[2].classList.remove("closeNav");
     }
     // Closes mobile bottom nav
     const closeMobNav = (event) => {
-        event.target.parentElement.classList.add("closeNav");
-        // Closing off hover nav when clicked nav link
         if (toggleDisplay === true) setToggleDisplay(false);
+        event.target.parentElement.parentElement.childNodes[1].checked = false;
     }
     return (
         <nav>
