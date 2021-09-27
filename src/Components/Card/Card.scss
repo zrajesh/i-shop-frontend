@@ -4,7 +4,6 @@
     height: 34.7rem;
     width: 20.7rem;
     border: 1px solid $border_card;
-    cursor: pointer;
     border-radius: 0.5rem;
     position: relative;
     @import "../hotLabel/HotLabel";
@@ -13,39 +12,51 @@
     }
     .card-image {
         height: 50%;
-    }
-    .card-text {
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1rem;
-        position: relative;
-        .card-head {
-            font-size: 2rem;
-            font-weight: bold;
-            text-align: center;
-        }
-        .rating {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-top: 2rem;
-            position: absolute;
-            bottom: 5rem;
-            .star {
-                color: $rating_color;
-                margin-left: 1rem;
+        &:hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cart-hover-wrap {
+                opacity: 1;
             }
         }
-        .price {
-            color: $orange_red;
-            font-size: 1.8rem;
-            position: absolute;
-            bottom: 2.2rem;
-            .price-line {
-                text-decoration: line-through;
-                color: $line_through;
-                margin: 0 0.5rem;
+    }
+    .card-link {
+        text-decoration: none;
+        color: $color_black;
+        .card-text {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1rem;
+            position: relative;
+            .card-head {
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+            }
+            .rating {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-top: 2rem;
+                position: absolute;
+                bottom: 5rem;
+                .star {
+                    color: $rating_color;
+                    margin-left: 1rem;
+                }
+            }
+            .price {
+                color: $orange_red;
+                font-size: 1.8rem;
+                position: absolute;
+                bottom: 2.2rem;
+                .price-line {
+                    text-decoration: line-through;
+                    color: $line_through;
+                    margin: 0 0.5rem;
+                }
             }
         }
     }

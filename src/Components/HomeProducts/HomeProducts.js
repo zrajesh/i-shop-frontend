@@ -29,7 +29,7 @@ const HomeProducts = () => {
 
     useEffect(() => {
         fetchProducts();
-        // Disabling the dependency pass
+        // Disabling the dependency pass warning
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
