@@ -1,6 +1,7 @@
 @import "../../scss/Variables";
 
 .mid-bannner{
+    margin: 0 1.5%;
     margin-top: 12rem;
     height: 30rem;
     display: flex;
@@ -9,6 +10,7 @@
     color: $color_white;
     .mid-text {
         margin-top: 5rem;
+        margin-left: 5rem;
         .heading {
             font-size: 5rem;
         }
