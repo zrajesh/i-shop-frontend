@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../Components/banner/Banner';
 import MobBanner from '../Components/banner/MobBanner';
 import HomeProducts from '../Components/HomeProducts/HomeProducts';
+import MidBanner from '../Components/midBanner/MidBanner';
 
 const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ const HomePage = () => {
             <Banner />
             <MobBanner />
             <HomeProducts />
+            <MidBanner />
         </div>
     );
 };

@@ -7,7 +7,7 @@ export const MobheaderTopImage = {
 };
 
 export const homeText = {
-    heading: "iPhone13",
+    heading: "i Phone 13",
     para: "Performance and design. Taken right to the edge.",
     btnName: "SHOP NOW"
 }   
