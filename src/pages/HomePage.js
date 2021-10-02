@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../Components/banner/Banner';
 import MobBanner from '../Components/banner/MobBanner';
 import FeaturedProducts from '../Components/featuredProducts/FeaturedProducts';
+import Footer from '../Components/footer/Footer';
 import HomeProducts from '../Components/HomeProducts/HomeProducts';
 import MidBanner from '../Components/midBanner/MidBanner';
 import ServiceFeature from '../Components/serviceFeature/ServiceFeature';
@@ -16,6 +17,7 @@ const HomePage = () => {
             <MidBanner />
             <ServiceFeature />
             <FeaturedProducts />
+            <Footer />
         </div>
     );
 };
