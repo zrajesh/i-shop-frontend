@@ -1,0 +1,8 @@
+.product-display {
+    margin-top: 3rem;
+    .display-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}

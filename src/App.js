@@ -7,6 +7,7 @@ import TopNav from "./Components/navigation/TopNav";
 import ProductDetails from "./Components/productDetails/ProductDetails";
 // Import pages
 import HomePage from "./pages/HomePage";
+import ShopPage from "./pages/ShopPage";
 // Import store
 import store from "./redux/store";
 
@@ -20,6 +21,7 @@ function App() {
         <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/product/:productId" component={ProductDetails} />
+            <Route exact path="/shop" component={ShopPage} />
         </Switch>
       </BrowserRouter>
     </div>

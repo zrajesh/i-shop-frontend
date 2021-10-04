@@ -7,6 +7,8 @@ import Footer from '../Components/footer/Footer';
 import HomeProducts from '../Components/HomeProducts/HomeProducts';
 import MidBanner from '../Components/midBanner/MidBanner';
 import ServiceFeature from '../Components/serviceFeature/ServiceFeature';
+// Import list
+import { headerTopImage, homeText } from '../Components/banner/BannerList';
 
 const HomePage = () => {
     return (
@@ -14,7 +16,9 @@ const HomePage = () => {
             <Banner />
             <MobBanner />
             <HomeProducts />
-            <MidBanner />
+            <MidBanner
+             headerTopImage={headerTopImage} homeText={homeText}
+            />
             <ServiceFeature />
             <FeaturedProducts />
             <Footer />

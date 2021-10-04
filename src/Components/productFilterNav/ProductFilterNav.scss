@@ -1,0 +1,26 @@
+@import "../../scss/Variables";
+
+.filter-nav {
+    background-color: $path_background;
+    display: flex;
+    justify-content: space-between;
+    .filter-btn {
+        display: flex;
+        .options {
+            margin: 2rem 2rem;
+            font-size: 1.8rem;
+            .select {
+                margin-left: 1rem;
+            }
+        }
+    }
+    .filter-items {
+        .filter {
+            margin: 2rem 2rem;
+            font-size: 1.8rem;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}

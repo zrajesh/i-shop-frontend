@@ -8,6 +8,6 @@ export const NavItems = [
     {name: "MEN", to: "/mens"},
     {name: "WOMEN", to: "/womens"},
     {name: "GADGETS", to: "/gadgets"},
-    {name: "JEWELERY", to: "/jeweleries"}
+    {name: "JEWELLERY", to: "/jewelleries"}
 ]
 

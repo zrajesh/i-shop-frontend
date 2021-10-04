@@ -1,3 +1,4 @@
+// Home page
 export const headerTopImage = {
     imageUrl: "https://i.ibb.co/TkF9Wmy/mockup.png"
 };
@@ -11,3 +12,14 @@ export const homeText = {
     para: "Performance and design. Taken right to the edge.",
     btnName: "SHOP NOW"
 }   
+
+// Shop Page
+export const ShopBannerImage = {
+    imageUrl: "https://i.ibb.co/0CJRGbK/pexels-photo-919436-removebg-preview.png"
+};
+
+export const ShopBannerText = {
+    heading: "Treat yo’ self.",
+    para: "You can always find something you want.",
+    btnName: "SHOP NOW"
+}
