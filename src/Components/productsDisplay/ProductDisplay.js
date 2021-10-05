@@ -60,7 +60,7 @@ const ProductDisplay = ({page}) => {
             }
             <div className="display-card">
             {
-                products.filter(product => product.id <= 12).map(product => (
+                products.map(product => (
                     <Card key={product.id} displayHotBox={displayHotBox} product={product} />
                 ))
             }

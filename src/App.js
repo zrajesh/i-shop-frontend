@@ -5,9 +5,13 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import BottomNav from "./Components/navigation/BottomNav";
 import TopNav from "./Components/navigation/TopNav";
 import ProductDetails from "./Components/productDetails/ProductDetails";
+import GadgetsPage from "./pages/GadgetsPage";
 // Import pages
 import HomePage from "./pages/HomePage";
+import JewelleryPage from "./pages/JewelleryPage";
+import MensPage from "./pages/MensPage";
 import ShopPage from "./pages/ShopPage";
+import WomensPage from "./pages/WomensPage";
 // Import store
 import store from "./redux/store";
 
@@ -22,6 +26,10 @@ function App() {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/product/:productId" component={ProductDetails} />
             <Route exact path="/shop" component={ShopPage} />
+            <Route exact path="/mens" component={MensPage} />
+            <Route exact path="/womens" component={WomensPage} />
+            <Route exact path="/gadgets" component={GadgetsPage} />
+            <Route exact path="/jewelleries" component={JewelleryPage} />
         </Switch>
       </BrowserRouter>
     </div>

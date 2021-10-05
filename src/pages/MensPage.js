@@ -4,16 +4,16 @@ import PagePath from '../Components/pagePath/PagePath';
 import { PageCallList } from '../Components/shopProducts/PageCallList';
 import ShopProducts from '../Components/shopProducts/ShopProducts';
 
-const ShopPage = () => {
+const MensPage = () => {
 
-    const {Shop} = PageCallList;
+    const {Men} = PageCallList;
 
     return (
         <div className="shop-page">
             <PagePath />
-            <ShopProducts page={Shop} />
+            <ShopProducts page={Men} />
         </div>
     );
 };
 
-export default ShopPage;
+export default MensPage;

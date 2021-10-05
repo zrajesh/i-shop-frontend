@@ -1,5 +1,5 @@
 export const FilterNavList = [
     {name: "Items"},
     {name: "Sort By", select: "New Trend"},
-    {name: "Show", select: "12"}
+    {name: "Show", select: "All Products"}
 ];

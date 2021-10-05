@@ -7,15 +7,12 @@ import ProductColor from '../productColor/ProductColor';
 import ProductFilterNav from '../productFilterNav/ProductFilterNav';
 // Import list
 import { ShopBannerImage, ShopBannerText } from '../banner/BannerList';
-import { PageCallList } from './PageCallList';
 // Import css
 import "./ShopProducts.scss";
 import ProductDisplay from '../productsDisplay/ProductDisplay';
 import Footer from '../footer/Footer';
 
-const ShopProducts = () => {
-
-    const {Shop} = PageCallList;
+const ShopProducts = ({page}) => {
 
     return (
         <div>
@@ -30,7 +27,7 @@ const ShopProducts = () => {
                  headerTopImage={ShopBannerImage} homeText={ShopBannerText}
                 />
                 <ProductFilterNav />
-                <ProductDisplay page={Shop} />
+                <ProductDisplay page={page} />
             </div>
         </div>
         <Footer />
