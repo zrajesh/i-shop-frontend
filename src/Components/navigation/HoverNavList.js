@@ -3,27 +3,27 @@ export const HoverCategoryList = [
         category: "Men", 
         className: "hoverCategory",
         list: [
-            {item: "T-Shirts", to: "/men/tshirts"},
-            {item: "Pants", to: "/men/pants"},
-            {item: "Shoes", to: "/men/shoes"}
+            {item: "T-Shirts", to: "/mens"},
+            {item: "Pants", to: "/mens"},
+            {item: "Shoes", to: "/mens"}
         ]
     },
     {
         category: "Women", 
         className: "hoverCategory",
         list: [
-            {item: "Mini Dress", to: "/women/minidress"},
-            {item: "Pants", to: "/women/pants"},
-            {item: "Shoes", to: "/women/shoes"}
+            {item: "Mini Dress", to: "/womens"},
+            {item: "Pants", to: "/womens"},
+            {item: "Shoes", to: "/womens"}
         ]
     },
     {
         category: "Accessories", 
         className: "hoverCategory",
         list: [
-            {item: "Laptops", to: "/accessories/laptops"},
-            {item: "Mobiles", to: "/accessories/mobiles"},
-            {item: "Earphones", to: "/accessories/earphones"}
+            {item: "Laptops", to: "/gadgets"},
+            {item: "Mobiles", to: "/gadgets"},
+            {item: "Earphones", to: "/gadgets"}
         ]
     }
 ]
