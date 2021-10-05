@@ -14,7 +14,9 @@ import ProductDisplay from '../productsDisplay/ProductDisplay';
 import Footer from '../footer/Footer';
 
 const ShopProducts = () => {
-    const {Shop} = PageCallList
+
+    const {Shop} = PageCallList;
+
     return (
         <div>
         <div className="shop-products">
