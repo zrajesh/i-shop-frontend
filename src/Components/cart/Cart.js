@@ -4,13 +4,11 @@ import { useSelector } from 'react-redux';
 import { CartListLeft, CartListRight } from './CartList';
 // Import css
 import "./Cart.scss";
-import CtaButton from '../ctaBtn/CtaButton';
-import { CtaList } from '../CtaList';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const product = useSelector(state => state.addToCart.cart)
     const {title, image, price} = product;
-    const {checkout, checkoutTo} = CtaList;
     let [priceMultiplier, setPriceMultiplier] = useState(1);
 
     const incrementQty = () => {
@@ -71,7 +69,12 @@ const Cart = () => {
                     <h1>TOTAL</h1>
                     <h1>${(price * priceMultiplier) + 20}</h1>
                 </div>
-                <CtaButton cta={checkout} ctaTo={checkoutTo} />
+                <div className="cta-btn-checkout">
+                    <Link 
+                     to="#"
+                     className="cta-btn"
+                    >CHECKOUT</Link>
+                </div>
             </div>
         </div>
         </div>
