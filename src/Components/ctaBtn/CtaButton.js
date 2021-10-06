@@ -6,7 +6,7 @@ import { addProductToCart } from '../../redux/actions/productAction';
 import "./CtaButton.scss";
 
 const CtaButton = ({cta, ctaTo, product}) => {
-    const path = ctaTo === "#" ? ctaTo : "/cart"
+    const path = ctaTo === "/checkout" ? "#" : "/cart"
     const dispatch = useDispatch();
     const addToCart = (product) => {
         dispatch(addProductToCart(product));
