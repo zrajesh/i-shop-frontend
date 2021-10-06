@@ -7,7 +7,7 @@ import "./CartHover.scss";
 const CartHover = () => {
     return (
         <div className="cart-hover-wrap">
-            <Link to="/checkout">
+            <Link to="/cart">
                 <i className="cart-hover fas fa-shopping-cart"></i>
             </Link>
         </div>

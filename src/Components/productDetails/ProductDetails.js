@@ -5,6 +5,8 @@ import { useParams } from 'react-router';
 import axios from 'axios';
 // Import actions
 import { getAProduct } from '../../redux/actions/productAction';
+// Import components
+import ProductInfo from './ProductInfo';
 // Import list
 import { Loading } from '../Loading';
 // Import css
@@ -15,8 +17,6 @@ const ProductDetails = () => {
 
     const product = useSelector(state => state.selectedProduct.selectedProduct);
     const dispatch = useDispatch();
-
-    const {title} = product;
 
     useEffect(() => {
         const fetchProductDetails = async () => {
@@ -35,7 +35,7 @@ const ProductDetails = () => {
             {
                 product.length === 0 ?
                 <h2 className="loading-message">{Loading.productLoading}</h2>
-                : <h1>{title}</h1>
+                : <ProductInfo product={product} />
             }
         </div>
     );
