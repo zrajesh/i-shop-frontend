@@ -6,7 +6,6 @@ import { CartListLeft, CartListRight } from './CartList';
 import "./Cart.scss";
 import CtaButton from '../ctaBtn/CtaButton';
 import { CtaList } from '../CtaList';
-import Footer from '../footer/Footer';
 
 const Cart = () => {
     const product = useSelector(state => state.addToCart.cart)
@@ -75,7 +74,6 @@ const Cart = () => {
                 <CtaButton cta={checkout} ctaTo={checkoutTo} />
             </div>
         </div>
-        <Footer />
         </div>
     );
 };
