@@ -6,6 +6,7 @@ import BottomNav from "./Components/navigation/BottomNav";
 import TopNav from "./Components/navigation/TopNav";
 import ProductDetails from "./Components/productDetails/ProductDetails";
 import GadgetsPage from "./pages/GadgetsPage";
+import Cart from "./Components/cart/Cart";
 // Import pages
 import HomePage from "./pages/HomePage";
 import JewelleryPage from "./pages/JewelleryPage";
@@ -30,6 +31,7 @@ function App() {
             <Route exact path="/womens" component={WomensPage} />
             <Route exact path="/gadgets" component={GadgetsPage} />
             <Route exact path="/jewelleries" component={JewelleryPage} />
+            <Route exact path="/cart" component={Cart} />
         </Switch>
       </BrowserRouter>
     </div>

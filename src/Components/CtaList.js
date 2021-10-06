@@ -1,4 +1,6 @@
 export const CtaList = {
     buy: "BUY NOW",
-    checkout: "CHECK OUT"
+    butTo: "/cart",
+    checkout: "CHECK OUT",
+    checkoutTo: "/checkout"
 }

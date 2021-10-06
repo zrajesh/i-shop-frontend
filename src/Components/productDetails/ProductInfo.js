@@ -17,7 +17,7 @@ const ProductInfo = ({product}) => {
                  alt="product" 
                  className="product-image" 
                 />
-                <CtaButton cta={buy} />
+                <CtaButton cta={buy} product={product} />
             </div>
             <div className="product-right">
                 <h2 className="product-title">{title}</h2>

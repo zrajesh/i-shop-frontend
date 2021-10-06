@@ -26,7 +26,7 @@ const Card = ({displayHotBox, product}) => {
             >
             { 
                 // Display hover cart only in home page
-                displayHotBox === true ? <CartHover /> : null
+                displayHotBox === true ? <CartHover product={product} /> : null
             }
             </div>
             <Link className="card-link" to={`/product/${id}`}>
