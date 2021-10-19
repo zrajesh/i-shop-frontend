@@ -7,13 +7,13 @@ import { CtaList } from '../CtaList';
 const ProductInfo = ({product}) => {
 
     const {buy} = CtaList;
-    const {title, image, category, price, description, rating:{rate, count}} = product;
+    const {title, imageUrl, category, price, description, rating:{rate, count}} = product;
 
     return (
         <div className="product-info">
             <div className="product-left">
                 <img
-                 src={image} 
+                 src={imageUrl} 
                  alt="product" 
                  className="product-image" 
                 />
@@ -21,7 +21,7 @@ const ProductInfo = ({product}) => {
             </div>
             <div className="product-right">
                 <h2 className="product-title">{title}</h2>
-                <p className="category-tag">{category}</p>
+                <p className="category-tag">{category.name}</p>
                 <p className="price-badge">${price}</p>
                 <p className="rating">{rate}
                 <span>

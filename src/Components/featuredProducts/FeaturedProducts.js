@@ -35,8 +35,8 @@ const FeaturedProducts = () => {
             <h2 className="feature-products-head">FEATURED PRODUCTS</h2>
             <Carousel infinite={true} responsive={responsive}>
             {
-                products.filter(product => product.id <= 5).map(product => (
-                    <Card key={product.id} displayHotBox={displayHotBox} product={product} />
+                products.filter((item, index) => index <= 5).map(product => (
+                    <Card key={product._id} displayHotBox={displayHotBox} product={product} />
                 ))
             }
             </Carousel>;

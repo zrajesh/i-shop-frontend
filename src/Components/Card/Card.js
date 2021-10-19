@@ -7,7 +7,7 @@ import "./Card.scss";
 import { Link } from 'react-router-dom';
 
 const Card = ({displayHotBox, product}) => {
-    const {id, image, title, price, rating:{rate}} = product;
+    const {_id, imageUrl, title, price, rating:{rate}} = product;
     const truncateString = (str, words) => {
         return str.split(" ").splice(0,words).join(" ");
     }
@@ -19,7 +19,7 @@ const Card = ({displayHotBox, product}) => {
             <div 
              className="card-image"
              style={{backgroundImage: 
-                `url(${image})`, 
+                `url(${imageUrl})`, 
                 backgroundRepeat: "no-repeat",
                 WebkitBackgroundSize: "cover"
             }}
@@ -29,7 +29,7 @@ const Card = ({displayHotBox, product}) => {
                 displayHotBox === true ? <CartHover product={product} /> : null
             }
             </div>
-            <Link className="card-link" to={`/product/${id}`}>
+            <Link className="card-link" to={`/product/${_id}`}>
             <div className="card-text">
             <p className="card-head">{truncateString(title, 4)}</p>
             <p className="rating">

@@ -1,5 +1,5 @@
 
-# iSHOP An e-commerce full stack web app with payment gateway integration
+# iSHOP An e-commerce full stack web app with admin panel and payment gateway integration
 
 ## View Live:
 

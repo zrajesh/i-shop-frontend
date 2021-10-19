@@ -14,14 +14,14 @@ import "./ProductDetails.scss";
 
 const ProductDetails = () => {
     const {productId} = useParams();
-
+    
     const product = useSelector(state => state.selectedProduct.selectedProduct);
     const dispatch = useDispatch();
 
     useEffect(() => {
         const fetchProductDetails = async () => {
             const response =  await axios
-                .get(`https://fakestoreapi.com/products/${productId}`)
+                .get(`https://ishop-backend.herokuapp.com/api/product/${productId}`)
                 .catch(err => console.log("ERR: ", err))
             dispatch(getAProduct(response.data))
         }

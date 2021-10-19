@@ -22,7 +22,7 @@ const HomeProducts = () => {
 
     const fetchProducts =   async () => {
         const response = await axios
-            .get("https://fakestoreapi.com/products")
+            .get("https://ishop-backend.herokuapp.com/api/products")
             .catch(err => console.log("ERROR: ", err))
         dispatch(getAllProducts(response.data))
     }
@@ -45,8 +45,8 @@ const HomeProducts = () => {
                 : null
             }
             {
-                products.filter(product => product.id <= 5).map(product => (
-                    <Card key={product.id} displayHotBox={displayHotBox} product={product} />
+                products.filter((item, index) => index <= 4).map(product => (
+                    <Card key={product._id} displayHotBox={displayHotBox} product={product} />
                 ))
             }
             </div>

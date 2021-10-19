@@ -17,23 +17,23 @@ const ProductDisplay = ({page}) => {
     let fetchUrl;
     switch(page) {
         case "SHOP":
-            fetchUrl = "https://fakestoreapi.com/products"
+            fetchUrl = "https://ishop-backend.herokuapp.com/api/products"
             break;
         case "MEN":
-            fetchUrl="https://fakestoreapi.com/products/category/men's clothing"
+            fetchUrl="https://ishop-backend.herokuapp.com/api/products/616d515169c469203e5c49e7"
             break;
         case "WOMEN":
-            fetchUrl="https://fakestoreapi.com/products/category/women's clothing"
+            fetchUrl="https://ishop-backend.herokuapp.com/api/products/616d515c69c469203e5c49e9"
             break;
             case "ACCESSORIES":
-                fetchUrl="https://fakestoreapi.com/products/category/electronics"
+                fetchUrl="https://ishop-backend.herokuapp.com/api/products/616d517069c469203e5c49eb"
                 break;
         case "JEWELLERY":
-            fetchUrl = "https://fakestoreapi.com/products/category/jewelery"
+            fetchUrl = "https://ishop-backend.herokuapp.com/api/products/616d519869c469203e5c49ed"
             break;
 
         default:
-            fetchUrl = "https://fakestoreapi.com/products"
+            fetchUrl = "https://ishop-backend.herokuapp.com/api/products"
     }
     const fetchProducts =   async () => {
         const response = await axios
@@ -61,7 +61,7 @@ const ProductDisplay = ({page}) => {
             <div className="display-card">
             {
                 products.map(product => (
-                    <Card key={product.id} displayHotBox={displayHotBox} product={product} />
+                    <Card key={product._id} displayHotBox={displayHotBox} product={product} />
                 ))
             }
             </div>

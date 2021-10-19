@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const product = useSelector(state => state.addToCart.cart)
-    const {title, image, price} = product;
+    const {title, imageUrl, price} = product;
     let [priceMultiplier, setPriceMultiplier] = useState(1);
 
     const incrementQty = () => {
@@ -33,7 +33,7 @@ const Cart = () => {
             <hr className="head-line" />
             <div className="cart-content">
                 <div className="left-items">
-                    <img className="image" src={image} alt="product" />
+                    <img className="image" src={imageUrl} alt="product" />
                     <p className="title">{title}</p>
                 </div>
                 <div className="right-items">
