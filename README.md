@@ -11,3 +11,8 @@ https://aishop.netlify.app/
 **Frontend:** React, Redux
 
 **Backend:** Node, Express, MongoDB
+
+## Features
+- Products listing based on different categories
+- Product description
+- Checkout and more
