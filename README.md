@@ -4,7 +4,6 @@
 ## View Live:
 
 https://aishop.netlify.app/
-
   
 ## Tech Stack
 
